@@ -15,7 +15,7 @@ router.get('/user/:telegramId', async (req, res) => {
   }
 });
 
-// Increment Coin Balance
+
 router.put('/user/:telegramId', async (req, res) => {
   try {
     const user = await User.findOneAndUpdate(
