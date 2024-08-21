@@ -4,7 +4,7 @@ const express = require('express');
 const router = express.Router();
 const User = require("../models/User");
 
-// Get User Coin Balance
+
 router.get('/user/:telegramId', async (req, res) => {
   try {
     const user = await User.findOne({ telegramId: req.params.telegramId });
